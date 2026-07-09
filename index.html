@@ -26,13 +26,11 @@
     </div>
   </nav>
 
+  <!-- 1. Hero (claro) -->
   <header class="hero">
-    <div class="blobs" aria-hidden="true">
-      <span class="blob b1"></span><span class="blob b2"></span><span class="blob b3"></span><span class="blob b4"></span>
-    </div>
     <div class="wrap hero-grid">
-      <div class="hero-text anim-up d1">
-        <p class="eyebrow" style="margin-bottom:18px;">Nutricao sem planilha</p>
+      <div class="hero-text">
+        <p class="eyebrow">Nutricao sem planilha</p>
         <h1>Seus macros, <span class="accent">do seu jeito.</span></h1>
         <p class="lede">Acompanhe proteina, carboidrato, gordura e hidratacao com uma interface clara, calorias disponiveis em destaque e busca de alimentos por IA — texto ou foto.</p>
         <div class="hero-actions">
@@ -42,19 +40,58 @@
           </a>
           <a class="btn btn-ghost" href="#recursos">Ver recursos</a>
         </div>
-        <p class="badge-soon" style="margin-top:14px;">Em breve na App Store · iPhone com iOS 17+</p>
+        <p class="badge-soon" style="margin-top:16px;">Em breve na App Store · iPhone com iOS 17+</p>
       </div>
 
-      <div class="hero-device anim-up d2">
-        <span class="ring"></span>
-        <div class="device tilt floaty">
+      <div class="hero-device">
+        <div class="device">
           <img src="assets/screen-home.jpg" alt="Tela inicial do Macros com calorias disponiveis e macros do dia" width="600" height="1303">
         </div>
       </div>
     </div>
   </header>
 
-  <section class="section" id="recursos">
+  <!-- 2. Macros em destaque (escuro, split) -->
+  <section class="tile tile-dark reveal">
+    <div class="wrap split">
+      <div class="split-copy">
+        <h2>Macros em destaque</h2>
+        <p>Proteina, carbo e gordura com barras de progresso e estado claro: a caminho, na meta ou passou.</p>
+      </div>
+      <div class="split-media">
+        <div class="device"><img src="assets/screen-home.jpg" alt="Tela inicial do Macros com calorias disponiveis e macros do dia" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Busca por IA (parchment, split invertido) -->
+  <section class="tile tile-parchment reveal">
+    <div class="wrap split reverse">
+      <div class="split-copy">
+        <h2>Busca por IA</h2>
+        <p>Digite o alimento ou tire uma foto. A IA estima porcao e macros pra voce ajustar e salvar.</p>
+      </div>
+      <div class="split-media">
+        <div class="device"><img src="assets/screen-refeicoes.jpg" alt="Tela de refeicoes com busca por IA" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Treinos e Apple Saude (escuro, split) -->
+  <section class="tile tile-dark alt reveal">
+    <div class="wrap split">
+      <div class="split-copy">
+        <h2>Treinos e Apple Saude</h2>
+        <p>Registre treinos por categoria e veja o gasto ativo do dia somar ao seu balanco. Importe peso, treinos e gasto calorico direto da Apple Saude e do Apple Watch.</p>
+      </div>
+      <div class="split-media">
+        <div class="device"><img src="assets/screen-exercicios.jpg" alt="Tela de exercicios com gasto ativo" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Recursos (grade de 6 cards) -->
+  <section class="tile tile-white" id="recursos">
     <div class="wrap">
       <div class="section-head reveal">
         <p class="eyebrow">O que o app faz</p>
@@ -97,9 +134,10 @@
     </div>
   </section>
 
+  <!-- 6. Galeria (parede preta) -->
   <section class="gallery-band">
     <div class="wrap">
-      <div class="section-head center reveal">
+      <div class="section-head reveal">
         <p class="eyebrow">Por dentro do app</p>
         <h2>Bonito de usar todo dia.</h2>
         <p>Telas reais do Macros. Deslize para o lado.</p>
@@ -129,27 +167,25 @@
     </div>
   </section>
 
-  <section class="section" style="padding-top:0;">
-    <div class="wrap">
-      <div class="coach-band reveal">
-        <div class="coach-copy">
-          <p class="eyebrow">Inteligencia, sem julgamento</p>
-          <h2>Um coach que olha pro habito, nao pra balanca.</h2>
-          <p>O Insight do Dia e o Coach do Progresso analisam suas tendencias e te ajudam a seguir — sempre focando em comportamento e constancia, nunca em moralizar comida ou comentar seu corpo.</p>
-        </div>
-        <div class="coach-art">
-          <img src="assets/coach.jpg" alt="Coach do Macros incentivando o usuario" loading="lazy">
-        </div>
-      </div>
+  <!-- 7. Faixa coach (editorial escura) -->
+  <section class="coach-band reveal">
+    <div class="coach-copy">
+      <p class="eyebrow">Inteligencia, sem julgamento</p>
+      <h2>Um coach que olha pro habito, nao pra balanca.</h2>
+      <p>O Insight do Dia e o Coach do Progresso analisam suas tendencias e te ajudam a seguir — sempre focando em comportamento e constancia, nunca em moralizar comida ou comentar seu corpo.</p>
+    </div>
+    <div class="coach-art">
+      <img src="assets/coach.jpg" alt="Coach do Macros incentivando o usuario" loading="lazy">
     </div>
   </section>
 
+  <!-- 8. CTA final (parchment) -->
   <section class="cta-final">
     <div class="wrap reveal">
       <div class="cta-band">
         <h2>Pronto pra fechar o dia?</h2>
         <p>Baixe o Macros e comece a acompanhar do jeito mais simples.</p>
-        <a class="btn btn-light" href="#">
+        <a class="btn btn-dark" href="#">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.4 1.6c.1 1-.3 2-1 2.8-.7.8-1.8 1.4-2.8 1.3-.1-1 .4-2 1-2.7.8-.8 1.9-1.4 2.8-1.4zM19 17.3c-.5 1.1-.7 1.6-1.3 2.6-.9 1.4-2.1 3.1-3.7 3.1-1.4 0-1.7-.9-3.6-.9s-2.3.9-3.6.9c-1.6 0-2.8-1.6-3.7-3C-.7 16-1 11.2 1.4 8.6c1-1.2 2.4-1.9 3.8-1.9 1.5 0 2.4 1 3.6 1 1.2 0 1.9-1 3.6-1 1.3 0 2.6.7 3.6 1.9-3.1 1.7-2.6 6.2.4 7.7z"/></svg>
           Baixar na App Store
         </a>
